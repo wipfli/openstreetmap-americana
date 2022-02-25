@@ -19,9 +19,9 @@ jobs:
         run: |
           cd style
           npm install --include=dev
-          sed 's/<your MapTiler key>/53iZvB2drcamS0Ge0xiD/g' configs/config.maptiler.js > config.js
+          sed 's/<your MapTiler key>/get_your_own_OpIi9ZULNHzrESv6T2vL/g' configs/config.maptiler.js > config.js
           npm run build
-        # MapTiler key 53iZvB2drcamS0Ge0xiD only allows requests from zelonewolf.github.io
+        # MapTiler key get_your_own_OpIi9ZULNHzrESv6T2vL is the MapLibre demo key
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
